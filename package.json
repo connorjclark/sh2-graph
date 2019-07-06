@@ -7,13 +7,15 @@
     "vis": "^4.21.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "jest": "^24.8.0",
     "parcel": "^1.12.3",
     "rimraf": "^2.6.3"
   },
   "scripts": {
-    "build": "parcel build -t browser -d dist index.html && rimraf dist/*.png",
+    "build": "yarn clean && parcel build -t browser --public-url '.' -d dist index.html && rimraf dist/*.png",
     "watch": "parcel watch -t browser -d dist index.html",
-    "clean": "rimraf dist/**"
+    "clean": "rimraf dist/**",
+    "deploy": "node deploy.js"
   }
 }
