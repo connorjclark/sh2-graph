@@ -16,6 +16,7 @@
     "build": "yarn clean && parcel build -t browser --public-url '.' -d dist index.html && rimraf dist/*.png",
     "watch": "parcel watch -t browser -d dist index.html",
     "clean": "rimraf dist/**",
-    "deploy": "node deploy.js"
+    "deploy": "node deploy.js",
+    "test": "jest test.js"
   }
 }
