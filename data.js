@@ -313,6 +313,116 @@ const data = [
       'historical-society',
     ],
   },
+  {
+    id: 'prison',
+    label: 'Toluca Prison',
+    group: 'prison',
+    requires: [
+      'spiral-writing-key',
+    ],
+  },
+  {
+    id: 'gluttonous-pig',
+    group: 'prison',
+    requires: [
+      'prison',
+    ],
+  },
+  {
+    id: 'the-seductress',
+    group: 'prison',
+    requires: [
+      'prison',
+    ],
+  },
+  {
+    id: 'the-oppressor',
+    group: 'prison',
+    requires: [
+      'prison',
+    ],
+  },
+  {
+    id: 'wax-doll',
+    group: 'prison',
+    requires: [
+      'prison',
+    ],
+  },
+  {
+    id: 'horseshoe',
+    group: 'prison',
+    requires: [
+      'gluttonous-pig',
+      'the-seductress',
+      'the-oppressor',
+    ],
+  },
+  {
+    id: 'labyrinth',
+    group: 'labyrinth',
+    requires: [
+      'wax-doll',
+      'horseshoe',
+    ],
+  },
+  {
+    id: 'great-knife',
+    group: 'labyrinth',
+    requires: [
+      'labyrinth',
+    ],
+  },
+  {
+    id: 'box-puzzle',
+    group: 'labyrinth',
+    requires: [
+      'labyrinth',
+    ],
+  },
+  {
+    id: 'wire-cutter',
+    group: 'labyrinth',
+    requires: [
+      'box-puzzle',
+    ],
+  },
+  {
+    id: 'doorman-boss',
+    group: 'labyrinth',
+    requires: [
+      'wire-cutter',
+    ],
+  },
+  {
+    id: 'hangman-puzzle',
+    group: 'labyrinth',
+    requires: [
+      'doorman-boss',
+    ],
+  },
+  {
+    id: 'key-of-the-persecuted',
+    group: 'labyrinth',
+    requires: [
+      'hangman-puzzle',
+    ],
+  },
+  {
+    id: 'eddie-boss',
+    group: 'labyrinth',
+    requires: [
+      'key-of-the-persecuted',
+    ],
+  },
+  {
+    id: 'hotel',
+    label: 'Lakeview Hotel',
+    group: 'hotel',
+    requires: [
+      'eddie-boss',
+    ],
+  },
 ];
 
 // Normalize
