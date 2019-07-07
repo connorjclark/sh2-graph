@@ -544,6 +544,43 @@ const data = [
       'view-tape',
     ],
   },
+  {
+    id: 'crimson-ceremonies',
+    group: 'alternate-hotel',
+    requires: [
+      'alternate-hotel',
+    ],
+  },
+  {
+    id: 'pyramid-heads-boss',
+    group: 'alternate-hotel',
+    requires: [
+      'alternate-hotel',
+    ],
+  },
+  {
+    id: 'scarlet-egg',
+    group: 'alternate-hotel',
+    requires: [
+      'pyramid-heads-boss',
+    ],
+  },
+  {
+    id: 'rust-colored-egg',
+    label: 'Rust-Colored Egg',
+    group: 'alternate-hotel',
+    requires: [
+      'pyramid-heads-boss',
+    ],
+  },
+  {
+    id: 'maria-boss',
+    group: 'alternate-hotel',
+    requires: [
+      'scarlet-egg',
+      'rust-colored-egg',
+    ],
+  },
 ];
 
 // Normalize
