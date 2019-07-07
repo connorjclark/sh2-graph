@@ -425,6 +425,125 @@ const data = [
       'eddie-boss',
     ],
   },
+  {
+    id: 'little-mermaid',
+    group: 'hotel',
+    requires: [
+      'hotel',
+    ],
+  },
+  {
+    id: 'cinderella',
+    group: 'hotel',
+    requires: [
+      'thinner',
+      'key-to-room-204',
+    ],
+  },
+  {
+    id: 'snow-white',
+    group: 'hotel',
+    requires: [
+      'elevator-puzzle',
+    ],
+  },
+  {
+    id: 'fish-key',
+    group: 'hotel',
+    requires: [
+      'hotel',
+    ],
+  },
+  {
+    id: 'thinner',
+    group: 'hotel',
+    requires: [
+      'hotel',
+    ],
+  },
+  {
+    id: 'key-to-room-204',
+    group: 'hotel',
+    requires: [
+      'hotel',
+    ],
+  },
+  {
+    id: 'key-to-room-312',
+    group: 'hotel',
+    requires: [
+      'hotel',
+    ],
+  },
+  {
+    id: 'employee-elevator-key',
+    group: 'hotel',
+    requires: [
+      'key-to-room-204',
+    ],
+  },
+  {
+    id: 'elevator-puzzle',
+    group: 'hotel',
+    requires: [
+      'employee-elevator-key',
+    ],
+  },
+  {
+    id: 'videotape',
+    group: 'hotel',
+    requires: [
+      'elevator-puzzle',
+    ],
+  },
+  {
+    id: 'can-opener',
+    group: 'hotel',
+    requires: [
+      'elevator-puzzle',
+    ],
+  },
+  {
+    id: 'bar-key',
+    group: 'hotel',
+    requires: [
+      'hotel',
+    ],
+  },
+  {
+    id: 'lightbulb',
+    group: 'hotel',
+    requires: [
+      'can-opener',
+    ],
+  },
+  {
+    id: 'hotel-stairway-key',
+    group: 'hotel',
+    requires: [
+      'little-mermaid',
+      'cinderella',
+      'snow-white',
+      // Need this to get out of the bar.
+      'lightbulb',
+    ],
+  },
+  {
+    id: 'view-tape',
+    group: 'hotel',
+    requires: [
+      'hotel-stairway-key',
+      'videotape',
+      'key-to-room-312',
+    ],
+  },
+  {
+    id: 'alternate-hotel',
+    group: 'alternate-hotel',
+    requires: [
+      'view-tape',
+    ],
+  },
 ];
 
 // Normalize
