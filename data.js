@@ -187,6 +187,132 @@ const data = [
       'bowl-a-roma',
     ],
   },
+  {
+    id: 'purple-bull-key',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'bent-needle',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'examination-room-key',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'lapis-eye-key',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'roof-key',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'peice-of-hair',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'elevator-key',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'hanging-demons-boss',
+    group: 'hospital',
+    requires: [
+      'hospital',
+    ],
+  },
+  {
+    id: 'alternate-hospital',
+    group: 'alternate-hospital',
+    requires: [
+      'hanging-demons-boss',
+    ],
+  },
+  {
+    id: 'dry-cell-battery',
+    group: 'alternate-hospital',
+    requires: [
+      'alternate-hospital',
+    ],
+  },
+  {
+    id: 'basement-storeroom-key',
+    group: 'alternate-hospital',
+    requires: [
+      'alternate-hospital',
+    ],
+  },
+  {
+    id: 'copper-ring',
+    group: 'alternate-hospital',
+    requires: [
+      'alternate-hospital',
+    ],
+  },
+  {
+    id: 'lead-ring',
+    group: 'alternate-hospital',
+    requires: [
+      'alternate-hospital',
+    ],
+  },
+  {
+    id: 'hospital-lobby-key',
+    group: 'alternate-hospital',
+    requires: [
+      'alternate-hospital',
+    ],
+  },
+  {
+    id: 'old-bronze-key',
+    group: 'outside',
+    requires: [
+      'hospital-lobby-key',
+    ],
+  },
+  {
+    id: 'historical-society',
+    group: 'historical-society',
+    requires: [
+      'old-bronze-key',
+    ],
+  },
+  {
+    id: 'obsidian-goblet',
+    group: 'historical-society',
+    requires: [
+      'historical-society',
+    ],
+  },
+  {
+    id: 'spiral-writing-key',
+    group: 'historical-society',
+    requires: [
+      'historical-society',
+    ],
+  },
 ];
 
 // Normalize

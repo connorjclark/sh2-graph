@@ -37,7 +37,12 @@ const preselectedColors = [
     background: 'rgb(255, 88, 100)',
     font: 'rgb(22, 66, 63)',
   },
+  {
+    background: 'rgb(187, 211, 234)',
+    font: 'rgb(85, 83, 81)',
+  },
 ];
+const outsideColors = preselectedColors.pop();
 
 function adjustBrightness(col, amt) {
   let [R, G, B] = col.slice(4, col.length - 1).split(',').map(s => parseInt(s, 16));
@@ -85,12 +90,13 @@ const options = {
     borderWidth: 2,
   },
   groups: groups.reduce((acc, group, index) => {
+    const preselectedColor = group === 'outside' ? outsideColors : preselectedColors[index % preselectedColors.length];
     acc[group] = {
       color: {
-        background: preselectedColors[index % preselectedColors.length].background,
-        highlight: adjustBrightness(preselectedColors[index % preselectedColors.length].background, 10),
+        background: preselectedColor.background,
+        highlight: adjustBrightness(preselectedColor.background, 10),
       },
-      font: { color: preselectedColors[index % preselectedColors.length].font },
+      font: { color: preselectedColor.font },
     };
     return acc;
   }, {}),
