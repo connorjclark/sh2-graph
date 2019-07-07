@@ -51,7 +51,142 @@ const data = [
     requires: [
       'flashlight',
     ],
-  }
+  },
+  {
+    id: 'courtyard-key',
+    group: 'apartments',
+    requires: [
+      'clock-key',
+    ],
+  },
+  {
+    id: 'fire-escape-key',
+    group: 'apartments',
+    requires: [
+      'clock-key',
+    ],
+  },
+  {
+    id: 'canned-juice',
+    group: 'apartments',
+    requires: [
+      'clock-key',
+    ],
+  },
+  {
+    id: 'coin-old-man',
+    group: 'apartments',
+    requires: [
+      'canned-juice',
+    ],
+  },
+  {
+    id: 'coin-snake',
+    group: 'apartments',
+    requires: [
+      'courtyard-key',
+    ],
+  },
+  {
+    id: 'wallet-in-the-toilet-bowl',
+    group: 'apartments',
+    requires: [
+      'fire-escape-key',
+    ],
+  },
+  {
+    id: 'room-109',
+    group: 'apartments',
+    requires: [
+      'fire-escape-key',
+    ],
+  },
+  {
+    id: 'angelas-knife',
+    group: 'apartments',
+    requires: [
+      'room-109',
+    ],
+  },
+  {
+    id: 'coin-prisoner',
+    group: 'apartments',
+    requires: [
+      'room-109',
+    ],
+  },
+  {
+    id: 'white-prism',
+    group: 'apartments',
+    requires: [
+      'fire-escape-key',
+    ],
+  },
+  {
+    id: 'coin-puzzle',
+    group: 'apartments',
+    requires: [
+      'coin-old-man',
+      'coin-snake',
+      'coin-prisoner',
+    ],
+  },
+  {
+    id: 'lyne-house-key',
+    group: 'apartments',
+    requires: [
+      'coin-puzzle',
+    ],
+  },
+  {
+    id: 'apartment-stairway-key',
+    group: 'apartments',
+    requires: [
+      'lyne-house-key',
+    ],
+  },
+  {
+    id: 'pyramid-head-boss',
+    group: 'apartments',
+    requires: [
+      'apartment-stairway-key',
+    ],
+  },
+  {
+    id: 'maria-cutscene',
+    group: 'outside',
+    requires: [
+      'pyramid-head-boss',
+    ],
+  },
+  {
+    id: 'steel-pipe',
+    group: 'outside',
+    requires: [
+      'maria-cutscene',
+    ],
+  },
+  {
+    id: 'lost-memories',
+    group: 'outside',
+    requires: [
+      'maria-cutscene',
+    ],
+  },
+  {
+    id: 'bowl-a-roma',
+    group: 'outside',
+    requires: [
+      'maria-cutscene',
+    ],
+  },
+  {
+    id: 'hospital',
+    group: 'hospital',
+    requires: [
+      'bowl-a-roma',
+    ],
+  },
 ];
 
 // Normalize
