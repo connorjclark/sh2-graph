@@ -182,6 +182,7 @@ const data = [
   },
   {
     id: 'hospital',
+    label: 'Brookhaven Hospital',
     group: 'hospital',
     requires: [
       'bowl-a-roma',
@@ -294,6 +295,7 @@ const data = [
   },
   {
     id: 'historical-society',
+    label: 'Silent Hill Historical Society',
     group: 'historical-society',
     requires: [
       'old-bronze-key',
@@ -427,6 +429,8 @@ const data = [
 
 // Normalize
 for (const objective of data) {
+  objective.label = objective.label ||
+    objective.id.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
   objective.group = objective.group || 'outside';
   objective.requires = objective.requires || [];
 }

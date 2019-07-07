@@ -4,7 +4,7 @@ const objectives = require('./data.js');
 const nodes = new vis.DataSet(objectives.map(node => {
   return {
     id: node.id,
-    label: node.id,
+    label: node.label,
     group: node.group,
   };
 }));
