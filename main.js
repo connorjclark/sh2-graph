@@ -101,5 +101,17 @@ const options = {
     return acc;
   }, {}),
 };
-new vis.Network(container, { nodes, edges }, options);
+
+const network = new vis.Network(container, { nodes, edges }, options);
 document.body.appendChild(container);
+network.once('afterDrawing', () => {
+  network.focus('radio', {
+    scale: 1,
+    offset: {
+      y: -window.innerHeight / 2.5,
+    },
+    animation: {
+      duration: 1000,
+    },
+  });
+});

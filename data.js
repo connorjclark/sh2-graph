@@ -1,23 +1,5 @@
 const data = [
   {
-    id: 'new-game-plus',
-    requires: [
-      'maria-boss',
-    ],
-  },
-  {
-    id: 'chainsaw',
-    requires: [
-      'new-game-plus',
-    ],
-  },
-  {
-    id: 'hyper-spray',
-    requires: [
-      'new-game-plus',
-    ],
-  },
-  {
     id: 'radio',
     group: 'outside',
   },
@@ -187,6 +169,7 @@ const data = [
       'maria-cutscene',
     ],
   },
+  // TODO encode the requires for the hospital / alternate hospital
   {
     id: 'hospital',
     label: 'Brookhaven Hospital',
@@ -586,6 +569,24 @@ const data = [
     requires: [
       'scarlet-egg',
       'rust-colored-egg',
+    ],
+  },
+  {
+    id: 'new-game-plus',
+    requires: [
+      'maria-boss',
+    ],
+  },
+  {
+    id: 'chainsaw',
+    requires: [
+      'new-game-plus',
+    ],
+  },
+  {
+    id: 'hyper-spray',
+    requires: [
+      'new-game-plus',
     ],
   },
 ];
