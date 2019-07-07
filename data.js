@@ -1,14 +1,21 @@
 const data = [
   {
     id: 'new-game-plus',
+    requires: [
+      'maria-boss',
+    ],
   },
   {
     id: 'chainsaw',
-    requires: ['new-game-plus'],
+    requires: [
+      'new-game-plus',
+    ],
   },
   {
     id: 'hyper-spray',
-    requires: ['new-game-plus'],
+    requires: [
+      'new-game-plus',
+    ],
   },
   {
     id: 'radio',
@@ -582,6 +589,8 @@ const data = [
     ],
   },
 ];
+
+// TODO add the multiple endings
 
 // Normalize
 for (const objective of data) {
